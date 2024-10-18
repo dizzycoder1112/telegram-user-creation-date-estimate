@@ -23,7 +23,7 @@ function genUnixTimestamp(date: Date): number {
   return Math.floor(date.getTime() / 1000)
 }
 
-const usersMap = new Map<number, Date>();
+let usersMap = new Map<number, Date>();
 let minId: number;
 let maxId: number;
 
@@ -62,6 +62,7 @@ async function init(){
   if (users.length === 0) {
     return;
   }
+  usersMap = new Map<number, Date>();
 
   for (let i = 0; i < users.length; i++) {
     const user = users[i];
@@ -84,11 +85,12 @@ bot.onText(/\/addData (.+)/, async (msg, match: any) => {
   try {
     await prisma.user.create({
       data: {
-        id: userId,
-        createdAt: new Date(createdAt*1000)
+        id: parseInt(userId as string),
+        createdAt: new Date(parseInt(createdAt as string)*1000)
       }
     })
     bot.sendMessage(msg.chat.id, `User ${userId} created at ${createdAt}`)
+    init()
     console.log(`User ${userId} created at ${createdAt}`)
   } catch (error) {
     console.log(error)
