@@ -51,11 +51,9 @@ As we obtain more accurate data sets, the estimates will become increasingly pre
 
 # **Start P.O.C**
 
-create `.env` file and use the variable as `.env.example`
+1. create `.env` file and use the variable as `.env.example`
 
-
-
-initialize and start service
+2. initialize and start service
 
 ```
 npm install
@@ -65,9 +63,6 @@ npm run dev
 ```
 
 # Usage
-
-After start the service and interact with telegram bot https://t.me/goooooood_sdjckhsdkjsdhc_bot 
-
 create new data
 
 ```
