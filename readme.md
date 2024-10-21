@@ -59,7 +59,6 @@ As we obtain more accurate data sets, the estimates will become increasingly pre
 npm install
 
 npm run dev
-
 ```
 
 # Usage
@@ -67,14 +66,12 @@ create new data
 
 ```
 /addData userId createAt(unix-timestamp)
-
 ```
 
 estimate user createdAt
 
 ```
 /estimate userId
-
 ```
 
 ### Demo screenshot
