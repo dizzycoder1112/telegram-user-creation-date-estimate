@@ -14,14 +14,14 @@ Assume we have  data sets and a known `userId` = 21538514
 
 ```jsx
 [
-	{
-		userId: 11538514
-		createdAtUnixTimestamp: 1391212000
-	},
-		{
-		userId: 103151531
-		createdAtUnixTimestamp: 1433376000
-	},
+ {
+  userId: 11538514
+  createdAtUnixTimestamp: 1391212000
+ },
+ {
+  userId: 103151531
+  createdAtUnixTimestamp: 1433376000
+ },
 ]
 ```
 
@@ -50,12 +50,6 @@ x, y = 21538514, 1395814402 // y was estimated as 2014.03.26
 As we obtain more accurate data sets, the estimates will become increasingly precise.
 
 # **Start P.O.C**
-
-https://github.com/dizzycoder1112/telegram-user-creation-date-estimate
-
-```jsx
-git clone https://github.com/dizzycoder1112/telegram-user-creation-date-estimate.git
-```
 
 create `.env` file and use the variable as `.env.example`
 
@@ -89,5 +83,3 @@ estimate user createdAt
 ```
 
 ### Demo screenshot
-
-![Screenshot 2024-10-19 at 17.04.29.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6d898a73-6093-49d2-adcd-8a89024cbf87/241de6dd-57f2-48f5-8a0a-dc5f161857e9/Screenshot_2024-10-19_at_17.04.29.png)
